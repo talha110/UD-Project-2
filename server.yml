@@ -87,11 +87,11 @@ Resources:
           aws s3 cp s3://udacity-demo-1/udacity.zip .
           unzip -o udacity.zip
           systemctl start apache2.service
-      ImageId: ami-003634241a8fcdec0
+      ImageId: ami-0bbe28eb2173f6167
       IamInstanceProfile: !Ref WebServerInstanceProfile
       SecurityGroups:
         - Ref: WebServerSecGroup
-      InstanceType: t2.small
+      InstanceType: t2.medium
       BlockDeviceMappings:
         - DeviceName: "/dev/sdk"
           Ebs:
