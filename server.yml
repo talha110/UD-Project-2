@@ -3,7 +3,7 @@ Description: >
 
 Parameters:
   EnvironmentName:
-    Description: An environment name that will be prefixed to resource names 
+    Description: Resouces name prefix will be added
     Type: String
 Resources:
   LBSecGroup:
